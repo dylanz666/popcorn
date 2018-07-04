@@ -1,0 +1,14 @@
+{
+	"miniprogramRoot": "./client",
+	"qcloudRoot": "./server",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"appid": "wx73a6fdd061da6cd0",
+	"projectname": "Popcorn",
+	"condition": {}
+}

@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view class="container">
+  <view>
+    <text class="voteName-text">{{votingName}}</text>
+  </view>
+  <view class="voteItems">
+    <radio-group bindchange="radioChange" class="voteItems-text">
+      <radio class="radio" wx:for="{{votingItems}}" wx:key="name" value="{{item}}">
+        <text class="voteItems-text">{{item}}</text>
+      </radio>
+    </radio-group>
+  </view>
+  <button class="vote" type="primary" bindtap="confirmVote">确定投票</button>
+</view>
