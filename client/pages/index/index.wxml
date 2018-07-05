@@ -1,19 +1,25 @@
 <!--index.wxml-->
 <view class="container">
-
-
-  <!-- <view>
-    <canvas style="width: 300px; height: 200px;" canvas-id="firstCanvas"></canvas>
-  </view> -->
-
-  <swiper indicator-dots="true" autoplay="true" interval="5000" duration="1000" style='width: 100%'>
-    <swiper-item wx:for="{{imgUrls}}" wx:for-item="imgItem">
-      <image src='{{imgItem}}' class="slide-image" width="355" height="250" />
-    </swiper-item>
+  <swiper indicator-dots="{{indicatorDots}}" circular="{{circular}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swiperChange" style='margin: 0 auto;height: {{imageWidth*0.625}}px;width: {{imageWidth}}px;'>
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" bindload="imageLoad" class="slide-image" />
+      </swiper-item>
+    </block>
   </swiper>
 
   <view class="functionList">
     <navigator url="../listVoting/listVoting" open-type="navigate" class="functionList-text">投票小助手
+    </navigator>
+  </view>
+
+  <view class="functionList">
+    <navigator url="../jinxingmeifa/jinxingmeifa" open-type="navigate" class="functionList-text">金星美发
+    </navigator>
+  </view>
+
+  <view class="functionList">
+    <navigator url="../tianlixiecai/tianlixiecai" open-type="navigate" class="functionList-text">天利鞋材化工
     </navigator>
   </view>
 
