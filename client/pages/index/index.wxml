@@ -1,19 +1,14 @@
 <!--index.wxml-->
 <view class="container">
-  <swiper indicator-dots="{{indicatorDots}}" circular="{{circular}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swiperChange" style='margin: 0 auto;height: {{imageWidth*0.625}}px;width: {{imageWidth}}px;'>
+  <!-- <swiper indicator-dots="{{indicatorDots}}" circular="{{circular}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style='margin: 0 auto;height: {{imageWidth*0.625}}px;width: {{imageWidth}}px;'>
     <block wx:for="{{imgUrls}}">
       <swiper-item>
         <image src="{{item}}" bindload="imageLoad" class="slide-image" />
       </swiper-item>
     </block>
-  </swiper>
+  </swiper> -->
 
-  <view class="functionList">
-    <navigator url="../listVoting/listVoting" open-type="navigate" class="functionList-text">投票小助手
-    </navigator>
-  </view>
-
-  <view class="functionList">
+  <!-- <view class="functionList">
     <navigator url="../jinxingmeifa/jinxingmeifa" open-type="navigate" class="functionList-text">金星美发
     </navigator>
   </view>
@@ -23,4 +18,29 @@
     </navigator>
   </view>
 
+  <view class="functionList">
+    <navigator url="../elevator/elevator" open-type="navigate" class="functionList-text">无锡恒菱电梯装饰有限公司
+    </navigator>
+  </view> -->
+  <view class='userImage'>
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+
+
+
+  <view class='buttons'>
+    <view class="button" bindtap="viewJinXing">
+      <text>金星美发</text>
+    </view>
+    <view class="button" bindtap="viewTianLi">
+      <text>天利鞋材</text>
+    </view>
+    <view class="button" bindtap="viewElevator">
+      <text>恒菱电梯</text>
+    </view>
+    <view class="button">
+      <text>...</text>
+    </view>
+  </view>
 </view>

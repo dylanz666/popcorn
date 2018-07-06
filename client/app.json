@@ -5,7 +5,8 @@
     "pages/addVote/addVote",
     "pages/voting/voting",
     "pages/jinxingmeifa/jinxingmeifa",
-    "pages/tianlixiecai/tianlixiecai"
+    "pages/tianlixiecai/tianlixiecai",
+    "pages/elevator/elevator"
   ],
   "window":{
     "backgroundColor":"#F6F6F6",
