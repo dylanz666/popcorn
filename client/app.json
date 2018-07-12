@@ -1,12 +1,7 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/listVoting/listVoting",
-    "pages/addVote/addVote",
-    "pages/voting/voting",
-    "pages/jinxingmeifa/jinxingmeifa",
-    "pages/tianlixiecai/tianlixiecai",
-    "pages/elevator/elevator"
+    "pages/generateQrCode/generateQrCode"
   ],
   "window":{
     "backgroundColor":"#F6F6F6",

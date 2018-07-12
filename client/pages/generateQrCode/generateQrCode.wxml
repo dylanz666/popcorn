@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class="container">
+
+
+  <view class="page-body">
+    <view class="page-section">
+      <view class="page-section-title">请输入要生成二维码的文字或链接,例如,输入手机号码</view>
+      <view class="textarea-wrp">
+        <textarea auto-height auto-focus="true" bindinput='getUserInput'/>
+      </view>
+    </view>
+  </view>
+
+  <button type='primary' plain='true' bindtap='generateQrCode'>立即生成</button>
+  <view class='image'>
+    <image class='qrcode' src="{{qrcode}}" bindtap='previewImage'></image>
+  </view>
+
+</view>
